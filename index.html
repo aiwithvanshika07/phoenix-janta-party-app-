@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Phoenix Janta Party App</title>
+
+  <meta name="description" content="Official Phoenix Janta Party App - Rise Like a Phoenix. GenZ Are Phoenixes, Not Cockroaches." />
+  <meta name="theme-color" content="#ff6a00" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+
+  <link rel="icon" href="assets/logo.png" />
+</head>
+
+<body>
+
+  <header class="top-header">
+    <div class="brand">
+      <img src="assets/logo.png" alt="Phoenix Janta Party Logo" />
+      <div>
+        <h3>Phoenix Janta Party</h3>
+        <p>Rise • Transform • Lead</p>
+      </div>
+    </div>
+
+    <button id="installBtn" class="install-btn">Install App</button>
+  </header>
+
+  <main>
+
+    <section id="home" class="hero section">
+      <div class="hero-content">
+        <img src="assets/logo.png" class="hero-logo" alt="Phoenix Logo" />
+
+        <h1>Rise Like a Phoenix</h1>
+        <h2>GenZ Are Phoenixes, Not Cockroaches</h2>
+
+        <p>
+          Phoenix Janta Party is a youth-powered movement for courage,
+          responsibility, self-improvement, digital awareness, leadership,
+          and a better Bharat.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#join" class="btn primary">Join Movement</a>
+          <a href="#mission" class="btn secondary">Explore Mission</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="mission" class="section">
+      <h2 class="section-title">Our Mission</h2>
+
+      <div class="glass-card">
+        <p>
+          Our mission is to inspire young Indians to rise above fear,
+          laziness, excuses, and negativity. We believe every youth has
+          the power to transform their life with discipline, skills,
+          education, technology, and leadership.
+        </p>
+      </div>
+    </section>
+
+    <section id="pillars" class="section">
+      <h2 class="section-title">Phoenix Pillars</h2>
+
+      <div class="grid">
+        <div class="card">
+          <span>🔥</span>
+          <h3>Phoenix Mindset</h3>
+          <p>Rise again after every failure and become stronger.</p>
+        </div>
+
+        <div class="card">
+          <span>🎓</span>
+          <h3>Education</h3>
+          <p>Promoting learning, knowledge, and awareness among youth.</p>
+        </div>
+
+        <div class="card">
+          <span>💻</span>
+          <h3>Digital India</h3>
+          <p>Encouraging AI, technology, and digital skills for the future.</p>
+        </div>
+
+        <div class="card">
+          <span>🤝</span>
+          <h3>Leadership</h3>
+          <p>Creating responsible young leaders for society and nation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2 class="section-title">Our Projects</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Phoenix Mindset Campaign</h3>
+          <p>A motivational campaign to build courage and discipline in youth.</p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>AI & Digital Awareness</h3>
+          <p>Helping young people understand future technology and digital skills.</p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Youth Skill Development</h3>
+          <p>Encouraging practical skills, confidence, and self-growth.</p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Social Responsibility</h3>
+          <p>Building awareness about family, society, environment, and nation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="quote" class="section">
+      <h2 class="section-title">Motivational Thought</h2>
+
+      <div class="quote-box">
+        <p id="quoteText">
+          “A Phoenix never fears fire, because fire becomes the reason for its rebirth.”
+        </p>
+        <button onclick="newQuote()" class="btn primary">New Thought</button>
+      </div>
+    </section>
+
+    <section id="join" class="section">
+      <h2 class="section-title">Join Phoenix Movement</h2>
+
+      <form class="join-form" onsubmit="submitForm(event)">
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="tel" placeholder="Mobile Number" required />
+        <input type="text" placeholder="City" required />
+
+        <button type="submit" class="btn primary">Submit</button>
+      </form>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2 class="section-title">Contact</h2>
+
+      <p>Official Website:</p>
+      <a href="https://www.phoenixjanataparty.org" target="_blank">
+        www.phoenixjanataparty.org
+      </a>
+
+      <div class="share-area">
+        <button onclick="shareApp()" class="btn secondary">Share App</button>
+      </div>
+    </section>
+
+  </main>
+
+  <nav class="bottom-nav">
+    <a href="#home">🏠<span>Home</span></a>
+    <a href="#mission">🎯<span>Mission</span></a>
+    <a href="#projects">🚀<span>Projects</span></a>
+    <a href="#join">🤝<span>Join</span></a>
+  </nav>
+
+  <script src="script.js"></script>
+
+</body>
+    </html>
